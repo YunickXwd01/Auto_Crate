@@ -30,4 +30,4 @@ Auto is a powerful Facebook account automation tool designed for creating Facebo
 git clone https://github.com/YunickXwd01/Auto_Crate
 cd Auto_Crate
 pip install -r requirements.txt
-python run.py
+python main.py
