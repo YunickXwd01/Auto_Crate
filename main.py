@@ -8,11 +8,11 @@ import importlib.util
 import time
 import glob
 
-============================================
+#============================================
 
 DEVICE ARCHITECTURE CHECK
 
-============================================
+#============================================
 
 def check_device_architecture():
 print("\n" + "="*50)
@@ -55,11 +55,11 @@ except Exception as e:
         print(f"[✗] Device appears to be 32-bit (based on Python)")
         return False, machine
 
-============================================
+#============================================
 
 FIXED: DYNAMIC .SO CHECK
 
-============================================
+#============================================
 
 def check_compiled_module_compatibility():
 so_files = glob.glob("run*.so")
@@ -87,11 +87,11 @@ if so_files:
 
 return None
 
-============================================
+#============================================
 
 GIT PULL FUNCTION
 
-============================================
+#============================================
 
 def git_pull_updates():
 print("\n" + "="*50)
@@ -136,11 +136,11 @@ else:
     print("[!] Not a git repository")
     return False
 
-============================================
+#============================================
 
 MODULE LOADING (NO CHANGE NEEDED)
 
-============================================
+#============================================
 
 def load_compiled_module():
 try:
@@ -162,11 +162,11 @@ except Exception as e:
 print(f"[✗] Error loading module: {e}")
 return None, False
 
-============================================
+#============================================
 
 MAIN FUNCTION (UI SAME)
 
-============================================
+#============================================
 
 def main():
 os.system('cls' if platform.system().lower() == 'windows' else 'clear')
