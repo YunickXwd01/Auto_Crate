@@ -5,6 +5,7 @@ import subprocess
 import importlib.util
 import time
 import glob
+import run
 
 # ============================================
 # DEVICE ARCHITECTURE CHECK
